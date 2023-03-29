@@ -1,0 +1,6 @@
+# mac hidden files
+vscode
+.DS_Store
+
+# VM Environment directory
+passwd_generator_venv
