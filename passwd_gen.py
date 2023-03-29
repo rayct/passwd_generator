@@ -119,10 +119,3 @@ url = 'https://mywebsite/reset?key=' + secrets.token_urlsafe()
 print(url)
 
 
-# 3. Conclusion
-# A recap what we’ve learned today.
-# I started off exploring the basic functions provided by the secrets module.
-# Then, I tested the functions to generate some random password and tokens in string token or bytes.
-# Finally, I tried to play with the module and generated a few different types of password that are strong and secured.
-# Also I learned that you should not store your password in any plain text or encrypted file that is easily recoverable.
-# They should be salted and hashed using an irreversible, one-way hash function.
