@@ -3,4 +3,4 @@ vscode
 .DS_Store
 
 # VM Environment directory
-passwd_generator_venv
+passwd_gen_venv
