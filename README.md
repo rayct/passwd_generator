@@ -60,7 +60,7 @@ Contributions are welcome! If you'd like to contribute to this project, feel fre
 This project is licensed under the Creative Commons Legal Code.
 
 ## About
-This Password Generator application was created using Python and Tkinter by [Your Name]. It is a simple utility to generate secure passwords easily.
+This Password Generator application was created using Python and Tkinter by Raymond C. Turner. It is a simple utility to generate secure passwords easily.
 
 For more details, contact <info@codestak.io>
 
