@@ -42,10 +42,10 @@ This simple Password Generator application provides an easy way to create secure
     cd password-generator
     ```
 
-3. **Run the Application**
+3. **Run the Application from the cmd line**
 
     ```bash
-
+    python passwd_gen.py
     ```
 ## Usage
 1. Enter the desired password length.
