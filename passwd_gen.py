@@ -22,10 +22,23 @@ def generate_password():
     password_display.config(state=tk.DISABLED)
 
 def show_about():
-    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter\nVersion 1.0\nDeveloped by: codestak.io")
+    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter\nVersion 1.0")
 
 root = tk.Tk()
 root.title("Password Generator")
+
+# Define window size
+window_width = 400
+window_height = 350
+
+# Calculate position for the window to appear in the center
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+x_coordinate = (screen_width / 2) - (window_width / 2)
+y_coordinate = (screen_height / 2) - (window_height / 2)
+
+# Set window size and position
+root.geometry(f"{window_width}x{window_height}+{int(x_coordinate)}+{int(y_coordinate)}")
 
 # Title bar
 title_frame = tk.Frame(root, bg="#4CAF50", padx=10, pady=5)
@@ -63,7 +76,7 @@ special_chars_check.pack()
 
 # Generate button
 generate_button = tk.Button(root, text="Generate Password", command=generate_password)
-generate_button.pack()
+generate_button.pack(pady=5)  # Adding padding for spacing
 
 # Display generated password
 password_display = tk.Text(root, height=5, width=30)

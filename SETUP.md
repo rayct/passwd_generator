@@ -71,11 +71,11 @@ This will generate a `dist` folder containing the executable file (`password_gen
 
 ### Step 4: Distribute the Installer
 
-You can now distribute the `PasswordGeneratorSetup.exe` file to users. When run, it will install your password generator application on their Windows system.
+*You can now distribute the `PasswordGeneratorSetup.exe` file to users. When run, it will install your password generator application on their Windows system.*
 
-Remember to include necessary instructions or information about the application and its usage for the users.
+*Remember to include necessary instructions or information about the application and its usage for the users.*
 
-This process is for Windows; if you want to create installers for other operating systems or different types of installers, you'll need specific tools or methods for those platforms.
+*SThis process is for Windows; if you want to create installers for other operating systems or different types of installers, you'll need specific tools or methods for those platforms.*
 
 
 ---

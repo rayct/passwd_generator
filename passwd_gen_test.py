@@ -27,15 +27,26 @@ def show_about():
 root = tk.Tk()
 root.title("Password Generator")
 
-# Title bar
-title_frame = tk.Frame(root, bg="#4CAF50", padx=10, pady=5)
-title_frame.pack(side=tk.TOP, fill=tk.X)
+# Define window size
+window_width = 400
+window_height = 350
 
-title_label = tk.Label(title_frame, text="Password Generator", font=("Arial", 14), bg="#4CAF50", fg="white")
-title_label.pack(side=tk.LEFT)
+# Calculate position for the window to appear in the center
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+x_coordinate = (screen_width / 2) - (window_width / 2)
+y_coordinate = (screen_height / 2) - (window_height / 2)
 
-about_button = tk.Button(title_frame, text="About", command=show_about)
-about_button.pack(side=tk.RIGHT)
+# Set window size and position
+root.geometry(f"{window_width}x{window_height}+{int(x_coordinate)}+{int(y_coordinate)}")
+
+# Title bar with menu
+title_bar = tk.Menu(root)
+root.config(menu=title_bar)
+
+about_menu = tk.Menu(title_bar, tearoff=0)
+title_bar.add_cascade(label="About", menu=about_menu)
+about_menu.add_command(label="About", command=show_about)
 
 # Length selection
 length_label = tk.Label(root, text="Password Length:")
@@ -61,14 +72,14 @@ special_chars_var = tk.IntVar()
 special_chars_check = tk.Checkbutton(root, text="Special Characters", variable=special_chars_var)
 special_chars_check.pack()
 
+# Generate button
+generate_button = tk.Button(root, text="Generate Password", command=generate_password)
+generate_button.pack(pady=5)  # Adding padding for spacing
+
 # Display generated password
 password_display = tk.Text(root, height=5, width=30)
 password_display.config(state=tk.DISABLED)
 password_display.pack()
-
-# Generate button
-generate_button = tk.Button(root, text="Generate Password", command=generate_password)
-generate_button.pack()
 
 # Interface label at bottom right
 interface_label = tk.Label(root, text="Powered by Tkinter", fg="gray")
