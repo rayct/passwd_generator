@@ -7,5 +7,8 @@ passwd_gen_venv
 
 # Other files
 passwd_gen_test.py
-NOTES.md
+DEVELOPER-NOTES.md
 TODO.md
+
+# Other Directorys
+source-files
