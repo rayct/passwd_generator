@@ -57,7 +57,7 @@ This simple Password Generator application provides an easy way to create secure
 Contributions are welcome! If you'd like to contribute to this project, feel free to open a pull request or submit an issue.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the Creative Commons Legal Code.
 
 ## About
 This Password Generator application was created using Python and Tkinter by [Your Name]. It is a simple utility to generate secure passwords easily.
