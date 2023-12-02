@@ -45,7 +45,24 @@ This simple Password Generator application provides an easy way to create secure
 3. **Run the Application**
 
     ```bash
+
     ```
+## Usage
+1. Enter the desired password length.
+2. Check the character complexity options based on your preferences.
+3. Click the "Generate Password" button to create a random password.
+4. The generated password will be displayed in the text field.
+
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, feel free to open a pull request or submit an issue.
+
+## License
+This project is licensed under the MIT License.
+
+## About
+This Password Generator application was created using Python and Tkinter by [Your Name]. It is a simple utility to generate secure passwords easily.
+
+For more details, contact <info@codestak.io>
 
 
 ---
