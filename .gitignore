@@ -4,3 +4,6 @@ vscode
 
 # VM Environment directory
 passwd_gen_venv
+
+# Other files
+SETUP.md
