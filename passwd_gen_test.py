@@ -22,7 +22,7 @@ def generate_password():
     password_display.config(state=tk.DISABLED)
 
 def show_about():
-    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter\nVersion 1.0\nDeveloped by: codestak.io")
+    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter\nVersion 1.0")
 
 root = tk.Tk()
 root.title("Password Generator")
@@ -61,17 +61,17 @@ special_chars_var = tk.IntVar()
 special_chars_check = tk.Checkbutton(root, text="Special Characters", variable=special_chars_var)
 special_chars_check.pack()
 
-# Generate button
-generate_button = tk.Button(root, text="Generate Password", command=generate_password)
-generate_button.pack()
-
 # Display generated password
 password_display = tk.Text(root, height=5, width=30)
 password_display.config(state=tk.DISABLED)
 password_display.pack()
 
+# Generate button
+generate_button = tk.Button(root, text="Generate Password", command=generate_password)
+generate_button.pack()
+
 # Interface label at bottom right
-interface_label = tk.Label(root, text="codestak.io", fg="gray")
+interface_label = tk.Label(root, text="Powered by Tkinter", fg="gray")
 interface_label.pack(side=tk.RIGHT, anchor=tk.SE)
 
 root.mainloop()

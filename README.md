@@ -1,50 +1,51 @@
-# Generate Secure Random Passwords and Tokens in Python
-## In this piece, I learned the correct ways to generate strong random passwords and tokens that are cryptographically secured.
-## Having secure random numbers allows us to manage sensitive information, such as password and security tokens.
-## We will be using the secrets module, available since Python 3.6. The official documentation states:
+# Password Generator Application
 
-## “… secrets should be used in preference to the default pseudo-random number generator in the random module,
-## which is designed for modelling and simulation, not security or cryptography.”
+This application generates random passwords based on user-defined settings.
 
-## There are three sections in this article:
+## Table of Contents
 
-### Basic Usage
-### Examples
-### Conclusion
+- [Introduction](#introduction)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [About](#about)
 
-##  1. Basic Usage
-### The secrets module provides a few built-in functions that we can use to generate numbers and tokens.
-### Setup was required but I needed to import the module before I can use it.
+## Introduction
 
-* Create Virtual Enviroment
-```bash
-python3 -m venv passwd_gen_venv
-```
+This simple Password Generator application provides an easy way to create secure and random passwords. Users can specify the length of the password and choose various character types to include.
 
-* Start the Virtual Enviroment
-```bash
-. passwd_gen_venv/bin/activate
-```
+## Features
+
+- **Password Length:** Users can specify the length of the password they want to generate.
+- **Character Complexity Options:** Users can choose various character types to include in the password, such as uppercase letters, lowercase letters, digits, and special characters.
+
+## Requirements
+
+- Python 3.x
+- Tkinter (usually included in Python installations)
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/password-generator.git
+   ```
 
 
+2. **Navigate to the directory:**
 
-##  2. Examples
-### In this section, I will outline some of the best practices for generating a secure password and token.
-### Feel free to test them on your own.
-### Generate a 10-characters alphanumeric password
+    ```bash
+    cd password-generator
+    ```
 
+3. **Run the Application**
 
-##  3. Conclusion
-### A recap what we’ve learned today.
-### I started off exploring the basic functions provided by the secrets module.
-### Then, I tested the functions to generate some random password and tokens in string token or bytes.
-### Finally, I tried to play with the module and generated a few different types of password that are strong and secured.
-### Also I learned that you should not store your password in any plain text or encrypted file that is easily recoverable.
-### They should be salted and hashed using an irreversible, one-way hash function.
-
-### Finally A big Thank you to #clcoding.com for providing this short nugget of tech gold.
-
-### #rayturner.dev
+    ```bash
+    ```
 
 
 ---
@@ -52,3 +53,5 @@ python3 -m venv passwd_gen_venv
 Documentation By: **Raymond C. TURNER**
 
 **Revision:** Saturday 2nd December 2023
+
+**codestak.io**
