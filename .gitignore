@@ -6,6 +6,6 @@ vscode
 passwd_gen_venv
 
 # Other files
-SETUP.md
 passwd_gen_test.py
 NOTES.md
+TODO.md
