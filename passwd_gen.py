@@ -22,7 +22,7 @@ def generate_password():
     password_display.config(state=tk.DISABLED)
 
 def show_about():
-    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter\nVersion 1.0")
+    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter.\nApp Version 1.0")
 
 root = tk.Tk()
 root.title("Password Generator")
