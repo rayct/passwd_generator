@@ -1,5 +1,5 @@
 # Generate Secure Random Passwords and Tokens in Python
-## In this piece, I learned the proper ways to generate strong random passwords and tokens that are cryptographically secured.
+## In this piece, I learned the correct ways to generate strong random passwords and tokens that are cryptographically secured.
 ## Having secure random numbers allows us to manage sensitive information, such as password and security tokens.
 ## We will be using the secrets module, available since Python 3.6. The official documentation states:
 
@@ -14,7 +14,19 @@
 
 ##  1. Basic Usage
 ### The secrets module provides a few built-in functions that we can use to generate numbers and tokens.
-### No setup was required but I needed to import the module before I can use it.
+### Setup was required but I needed to import the module before I can use it.
+
+* Create Virtual Enviroment
+```bash
+python3 -m venv passwd_gen_venv
+```
+
+* Start the Virtual Enviroment
+```bash
+. passwd_gen_venv/bin/activate
+```
+
+
 
 ##  2. Examples
 ### In this section, I will outline some of the best practices for generating a secure password and token.
@@ -33,3 +45,10 @@
 ### Finally A big Thank you to #clcoding.com for providing this short nugget of tech gold.
 
 ### #rayturner.dev
+
+
+---
+
+Documentation By: **Raymond C. TURNER**
+
+**Revision:** Saturday 2nd December 2023
