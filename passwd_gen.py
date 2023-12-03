@@ -2,6 +2,8 @@ import tkinter as tk
 import random
 import string
 from tkinter import messagebox
+from tkinter import filedialog
+from fpdf import FPDF  # Required for PDF export
 
 def generate_password():
     password_length = int(length_entry.get())
@@ -21,15 +23,37 @@ def generate_password():
     password_display.insert(tk.END, password)
     password_display.config(state=tk.DISABLED)
 
+def save_to_file():
+    password = password_display.get(1.0, tk.END)
+    file_path = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Text Files", "*.txt"), ("PDF Files", "*.pdf")])
+    
+    if file_path:
+        if file_path.endswith(".pdf"):
+            pdf = FPDF()
+            pdf.add_page()
+            pdf.set_font("Arial", size=12)
+            pdf.cell(200, 10, txt="Generated Password", ln=True)
+            pdf.cell(200, 10, txt=password, ln=True)
+            pdf.output(file_path)
+        else:
+            with open(file_path, "w") as file:
+                file.write(password)
+
+def copy_to_clipboard():
+    password = password_display.get(1.0, tk.END)
+    root.clipboard_clear()
+    root.clipboard_append(password)
+    messagebox.showinfo("Copy to Clipboard", "Password copied to clipboard!")
+
 def show_about():
-    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter.\nApp Version 1.0")
+    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter.\nApp Version 1.0.1-beta")
 
 root = tk.Tk()
 root.title("Password Generator")
 
 # Define window size
 window_width = 400
-window_height = 350
+window_height = 500
 
 # Calculate position for the window to appear in the center
 screen_width = root.winfo_screenwidth()
@@ -83,8 +107,15 @@ password_display = tk.Text(root, height=5, width=30)
 password_display.config(state=tk.DISABLED)
 password_display.pack()
 
+# UI Buttons for Save to File and Copy to Clipboard
+save_button = tk.Button(root, text="Save to File", command=save_to_file)
+save_button.pack()
+
+copy_clipboard_button = tk.Button(root, text="Copy to Clipboard", command=copy_to_clipboard)
+copy_clipboard_button.pack()
+
 # Interface label at bottom right
-interface_label = tk.Label(root, text="codestak.io", fg="gray")
+interface_label = tk.Label(root, text="codestak.io-beta", fg="gray")
 interface_label.pack(side=tk.RIGHT, anchor=tk.SE)
 
 root.mainloop()
