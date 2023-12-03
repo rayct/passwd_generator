@@ -95,10 +95,10 @@ y_coordinate = (screen_height / 2) - (window_height / 2)
 root.geometry(f"{window_width}x{window_height}+{int(x_coordinate)}+{int(y_coordinate)}")
 
 # Title bar
-title_frame = tk.Frame(root, bg="#4CAF50", padx=10, pady=5)
+title_frame = tk.Frame(root, bg="#1B81A8", padx=10, pady=5)
 title_frame.pack(side=tk.TOP, fill=tk.X)
 
-title_label = tk.Label(title_frame, text="Password Generator", font=("Arial", 14), bg="#4CAF50", fg="white")
+title_label = tk.Label(title_frame, text="Password Generator", font=("Arial", 12), bg="#1B81A8", fg="white")
 title_label.pack(side=tk.LEFT)
 
 about_button = tk.Button(title_frame, text="About", command=show_about)
@@ -148,7 +148,7 @@ clear_button = tk.Button(root, text="Clear Password", command=clear_password)
 clear_button.pack(pady=5)
 
 # Interface label at bottom right
-interface_label = tk.Label(root, text="codestak.io-beta", fg="gray")
+interface_label = tk.Label(root, text="codestak.io", fg="gray")
 interface_label.pack(side=tk.RIGHT, anchor=tk.SE)
 
 root.mainloop()
