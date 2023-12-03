@@ -44,7 +44,7 @@ root.geometry(f"{window_width}x{window_height}+{int(x_coordinate)}+{int(y_coordi
 title_frame = tk.Frame(root, bg="#4CAF50", padx=10, pady=5)
 title_frame.pack(side=tk.TOP, fill=tk.X)
 
-title_label = tk.Label(title_frame, text="Python Password Generator", font=("Arial", 14), bg="#4CAF50", fg="white")
+title_label = tk.Label(title_frame, text="Password Generator", font=("Arial", 14), bg="#4CAF50", fg="white")
 title_label.pack(side=tk.LEFT)
 
 about_button = tk.Button(title_frame, text="About", command=show_about)
