@@ -46,7 +46,7 @@ def copy_to_clipboard():
     messagebox.showinfo("Copy to Clipboard", "Password copied to clipboard!")
 
 def show_about():
-    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter.\nApp Version 1.1.0")
+    messagebox.showinfo("About", "Password Generator App\nAuthor: Raymond C. Turner.\nApp Version 1.1.0")
 
 root = tk.Tk()
 root.title("Password Generator")
