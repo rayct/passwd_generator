@@ -45,6 +45,11 @@ def copy_to_clipboard():
     root.clipboard_append(password)
     messagebox.showinfo("Copy to Clipboard", "Password copied to clipboard!")
 
+def clear_password():
+    password_display.config(state=tk.NORMAL)
+    password_display.delete(1.0, tk.END)
+    password_display.config(state=tk.DISABLED)
+
 def show_about():
     messagebox.showinfo("About", "Password Generator App\nAuthor: Raymond C. Turner.\nApp Version 1.1.0")
 
@@ -107,12 +112,15 @@ password_display = tk.Text(root, height=5, width=30)
 password_display.config(state=tk.DISABLED)
 password_display.pack()
 
-# UI Buttons for Save to File and Copy to Clipboard
+# UI Buttons for Save to File, Copy to Clipboard, Clear Password
 save_button = tk.Button(root, text="Save to File", command=save_to_file)
 save_button.pack()
 
 copy_clipboard_button = tk.Button(root, text="Copy to Clipboard", command=copy_to_clipboard)
 copy_clipboard_button.pack()
+
+clear_button = tk.Button(root, text="Clear Password", command=clear_password)
+clear_button.pack()
 
 # Interface label at bottom right
 interface_label = tk.Label(root, text="codestak.io", fg="gray")
