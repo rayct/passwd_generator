@@ -46,7 +46,7 @@ def copy_to_clipboard():
     messagebox.showinfo("Copy to Clipboard", "Password copied to clipboard!")
 
 def show_about():
-    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter.\nApp Version 1.0.1-beta")
+    messagebox.showinfo("About", "Password Generator App\nCreated with Tkinter.\nApp Version 1.1.0")
 
 root = tk.Tk()
 root.title("Password Generator")
@@ -115,7 +115,7 @@ copy_clipboard_button = tk.Button(root, text="Copy to Clipboard", command=copy_t
 copy_clipboard_button.pack()
 
 # Interface label at bottom right
-interface_label = tk.Label(root, text="codestak.io-beta", fg="gray")
+interface_label = tk.Label(root, text="codestak.io", fg="gray")
 interface_label.pack(side=tk.RIGHT, anchor=tk.SE)
 
 root.mainloop()
