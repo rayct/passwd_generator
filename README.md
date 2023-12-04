@@ -1,4 +1,4 @@
-# Password Generator Application
+# Password Generator Application Version 1.0
 
 This application generates random passwords based on user-defined settings.
 
