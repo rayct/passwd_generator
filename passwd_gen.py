@@ -76,10 +76,10 @@ def clear_password():
     password_generated = False
 
 def show_about():
-    messagebox.showinfo("About", "Password Generator App\nAuthor: Raymond C. Turner.\nApp Version 1.1.0")
+    messagebox.showinfo("About", "Password Generator App\nAuthor: Raymond C. Turner.\nVersion 1.0-Alpha")
 
 root = tk.Tk()
-root.title("Password Generator")
+root.title("PassGen Version - 1.0-Alpha")
 
 # Define window size
 window_width = 400
@@ -95,10 +95,10 @@ y_coordinate = (screen_height / 2) - (window_height / 2)
 root.geometry(f"{window_width}x{window_height}+{int(x_coordinate)}+{int(y_coordinate)}")
 
 # Title bar
-title_frame = tk.Frame(root, bg="#1B81A8", padx=10, pady=5)
+title_frame = tk.Frame(root, bg="#1F6AA5", padx=10, pady=5)
 title_frame.pack(side=tk.TOP, fill=tk.X)
 
-title_label = tk.Label(title_frame, text="Password Generator", font=("Arial", 12), bg="#1B81A8", fg="white")
+title_label = tk.Label(title_frame, text="PassGen", font=("Arial", 16, "bold"), bg="#1F6AA5", fg="white")
 title_label.pack(side=tk.LEFT)
 
 about_button = tk.Button(title_frame, text="About", command=show_about)
